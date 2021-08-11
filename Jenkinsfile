@@ -15,22 +15,5 @@ pipeline {
         }
         
     }
-	post {
-        always {
-            clearws()
-			//deleteDir()
-        }
-
-        success {
-            emailext (
-               //send email
-            )
-        }
-
-        failure {
-            emailext (
-                //send notification
-            )
-        }
-    }
+	
 }
