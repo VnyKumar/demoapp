@@ -7,15 +7,15 @@ pipeline {
     stages {
         stage('clone') {
             steps {
-                echo 'Hello World' 
-                git clone https://github.com/VnyKumar/demoapp.git 
-		    javac *java
-		    java *class
+                sh 'echo "Hello World"' 
+                sh 'git clone https://github.com/VnyKumar/demoapp.git' 
+		sh 'javac *java'
+		sh 'java *class'
                 //git "https://github.com/VnyKumar/firstGit.git"
                 
-            }
-        }
+            }//steps
+        }//stage
         
-    }
+    }//stages
 	
-}
+}//pipeline
