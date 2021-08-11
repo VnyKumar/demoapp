@@ -12,6 +12,7 @@ pipeline {
 		//sh 'javac *java'
 		//sh 'java  HelloWorld'
 		 sh 'mvn -B -DskipTests clean package'
+		 sh 'pwd'
                 //git "https://github.com/VnyKumar/firstGit.git"
                 
             }//steps
